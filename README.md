@@ -1,18 +1,18 @@
 # <ins>PDF to JSON converter</ins>
 
 #### <ins>Description</ins>
-This is some code I will be using to automate the process of digitizing my D&D content. <br>
+I will use this code to automate the process of digitizing my D&D content. <br>
 I changed my code to process one document at a time as each document has different styles that I need to input. <br>
-Currently, I only have automation to detect the magic items, and convert them into a JSON format for my personal project.
+Currently, I only have automation to detect the magic items and convert them into a JSON format for my personal project.
 
 #### <ins>Guide</ins>
-To use the code, I need to change the doc_path to the path of the document, including the name and extension. <br>
+To use the code, you need to change the doc_path to the document's path, including the name and extension. <br>
 
 #### <ins>Magic Items</ins>
 To identify the items, you need to separate the headings and properties (Usually italicized, sometimes bold)<br>
 I have a function `find_details(page)`. Select a page that has items for easy identification. <br>
-This is not zero indexed, so you can input the exact page, example find_details(11) to get results for page 11.<br>
-This will print put lines on the page with their font family and size. It will only print lines with unique properties.<br>
+This is not zero-indexed, so you can input the exact page, for example, find_details(11) to get results for page 11.<br>
+This will print out lines on the page with their font family and size. It will only print lines with unique properties.<br>
 
 <ins>EXAMPLE</ins>
 ```python
